@@ -4,15 +4,17 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace GameConsole
 {
     class ProgramUI
     {
-        private GamePlay _gamePlay = new GamePlay(10);
+        private GamePlay _gamePlay;
         public void Run()
         {
+            LengthOfGameSetting();
             PopulateMines();
             while (_gamePlay.StillPlaying())
             {
@@ -98,6 +100,34 @@ namespace GameConsole
                     PlayerTwoWon();
                 }
             }
+        }
+        private void LengthOfGameSetting()
+        {
+            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
+            Console.WriteLine("Choose a setting:\n\n" +
+                "1) Short\n" +
+                "2) Medium\n" +
+                "3) Long\n");
+            ConsoleKeyInfo userInput = Console.ReadKey();
+            switch (userInput.Key)
+            {
+                case ConsoleKey.D1:
+                    _gamePlay = new GamePlay(5);
+                    break;
+                case ConsoleKey.D2:
+                    _gamePlay = new GamePlay(8);
+                    break;
+                case ConsoleKey.D3:
+                    _gamePlay = new GamePlay(11);
+                    break;
+                default:
+                    Console.Clear();
+                    LengthOfGameSetting();
+                    break;
+            }
+            Console.Clear();
+            Console.WriteLine("Generating game board, please wait...");
+            Thread.Sleep(3000);
         }
     }
 }
