@@ -34,16 +34,14 @@ namespace GameConsole
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(_gamePlay.GenerateNewBoard());
             Console.WriteLine("Player One");
-            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
+            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
 
 
             _gamePlay.MovePlayerOne();
 
             Console.Clear();
             Console.WriteLine(_gamePlay.GenerateNewBoard());
-            Console.WriteLine("Press Enter To Submit");
-            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
-            Console.ReadLine();
+            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
         }
         private void PlayerTwoTurn()
         {
@@ -51,27 +49,24 @@ namespace GameConsole
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(_gamePlay.GenerateNewBoard());
             Console.WriteLine("Player Two");
-            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
+            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
 
             _gamePlay.MovePlayerTwo();
 
             Console.Clear();
             Console.WriteLine(_gamePlay.GenerateNewBoard());
-            Console.WriteLine("Press Enter To Submit");
-            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
-            Console.ReadLine();
-
+            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
         }
         private void PlayerOneWon()
         {
             Console.Clear();
-            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\PlayerOne.txt").ToList().ForEach(c => Console.WriteLine(c));
+            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\PlayerOne.txt").ToList().ForEach(c => Console.WriteLine(c));
             Console.ReadLine();
         }
         private void PlayerTwoWon()
         {
             Console.Clear();
-            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\PlayerTwo.txt").ToList().ForEach(c => Console.WriteLine(c));
+            File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\PlayerTwo.txt").ToList().ForEach(c => Console.WriteLine(c));
             Console.ReadLine();
         }
         private void PopulateMines()
@@ -89,7 +84,7 @@ namespace GameConsole
             if (_gamePlay.DidPlayersActivateMine(_gamePlay.PlayerOne, _gamePlay.PlayerTwo))
             {
                 Console.Clear();
-                File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\GameOver.txt").ToList().ForEach(c => Console.WriteLine(c));
+                File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameOver.txt").ToList().ForEach(c => Console.WriteLine(c));
                 Console.ReadLine();
             }
             else
