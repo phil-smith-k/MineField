@@ -1,0 +1,9 @@
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\bin\Debug\GameConsole.exe.config
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\bin\Debug\GameConsole.exe
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\bin\Debug\GameConsole.pdb
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\bin\Debug\GameClasses.dll
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\bin\Debug\GameClasses.pdb
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\obj\Debug\GameConsole.csprojAssemblyReference.cache
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\obj\Debug\GameConsole.csproj.CopyComplete
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\obj\Debug\GameConsole.exe
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameConsole\obj\Debug\GameConsole.pdb

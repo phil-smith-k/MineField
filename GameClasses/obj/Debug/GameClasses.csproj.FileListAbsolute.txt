@@ -1,0 +1,5 @@
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameClasses\bin\Debug\GameClasses.dll
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameClasses\bin\Debug\GameClasses.pdb
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameClasses\obj\Debug\GameClasses.csprojAssemblyReference.cache
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameClasses\obj\Debug\GameClasses.dll
+C:\Users\pksmi\Documents\PersonalProjects\ConsoleGame\GameClasses\obj\Debug\GameClasses.pdb
