@@ -48,7 +48,7 @@ namespace GameConsole
         private void PlayerTwoTurn()
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(_gamePlay.GenerateNewBoard());
             Console.WriteLine("Player Two");
             File.ReadAllLines(@"C:\Users\pksmi\Documents\PersonalProjects\MineField.txt").ToList().ForEach(c => Console.WriteLine(c));
